@@ -1,34 +1,329 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>gulp-scss-starter</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
-        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
-        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
-        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
-        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-        <link rel="stylesheet" href="styles/main.css">
-    </head>
-    <body>
-        @@include("../blocks/modules/header/header.html")
-        @@include("../blocks/modules/footer/footer.html")
-        <script src="js/main.js"></script>
-        <script src="js/vendor.js"></script>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>gulp-scss-starter</title>
+  <meta name="theme-color" content="#fff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+  <link rel="stylesheet" href="styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <section class="navbar">
+    <div class="navbar-menu">
+      <div class="navbar-logo">
+        <img src="img/page.png" alt="logo">
+      </div>
+      <a href="">
+        <p>HEADPHONES</p>
+      </a>
+      <a href="">
+        <p>EARPHONES</p>
+      </a>
+      <a href="">
+        <p>SPEAKERS</p>
+      </a>
+      <a href="">
+        <p>EXPLORE</p>
+      </a>
+      <div class="navbar_sub-logo">
+        <a href=""><img src="img/icons/loop.svg" alt=""></a>
+        <a href=""><img src="img/icons/icon.svg" alt=""></a>
+        <a href=""><img src="img/icons/shape.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container">
+      <div class="headphone-wrapper">
+      <div class="headphone">
+        <img src="img/headphone.png" alt="headphone" class="headphone">
+      </div>
+      <div class="headphone-text">
+        <p>Beats Studio3 Wireless</p>
+        <p class="hedphone-description">Experience your<br> music like never before.</p>
+        <div class="headphone-button">
+        <span class="headphone-price">$299.95</span>
+        <button class="button" type="button" name="button">buy now</button>
+      </div>
+        <p>$60 Apple Music gift card with purchase of select Beats products.*</p>
+      </div>
+    </div>
+  </div>
+  </header>
+  <!-- COLUMN -->
+  <section class="wirelles__speaker">
+    <div class="container">
+      <div class="wirelles-wrapper">
+        <div class="wirelless-description">
+          <p class="wirelles-name">Portable Wireless Speaker</p>
+          <b><p class="wirelles-title">Beats Pillˣ</b>
+          <p class="wirelles-subtitle">Available Colors</p>
+          <p class="wirelles-color">Find your Color</p>
+          <div class="color-wrapper">
+          <div class="item-color"></div>
+          <div class="item-color2"></div>
+          <div class="item-color3"></div>
+        </div>
+        <div class="wirelles-block">
+          <span class="wirelles_price">$299.95</span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
+        </div>
+        <div class="wirelles-info"> 
+          <p>$60 Apple Music gift card with purchase of select Beats products.*</p>
+        </div>  
+        </div>
+        <div class="wirelless-colors">
+          <a href="#">
+            <img src="img/wirelles.png" alt="wirelles"></a>
+        </div>
+      </div>
+  </section>
+  <section class="powerbeats">
+    <div class="container">
+      <div class="powerbeats-wrapper">
+        <div class="powerbeats-img">
+          <img src="/img/powerbeats.png" alt="headphone">
+        </div>
+        <div class="powerbeats-text">
+          <p>Totally wireless high-performance earphones</p>
+          <p>Powerbeats Pro</p>
+          <p> Up to 9 hours of listening time<br>
+            Apple H1 Chip & Class 1 Wireless Bluetooth®<br>
+            Sweat & water resistant<br>
+            Adjustable, secure-fit earhooks</p>
+          <p>$60 Apple Music gift card with purchase of select Beats products.*</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="beats">
+    <div class="container">
+      <div class="beats-wrapper">
+        <div class="beats-text">
+          <p>Talk. Listen. Beats.</p>
+          <p class="title_beats">Beatsˣ</p>
+          <p class="beats-description">Up to 8 hours of battery life <br>
+            With Fast Fuel, a 5-minute charge = 2 hours of playback<br>
+            Sweat & water resistant<br>
+            Apple W1 Chip & Class 1 Wireless Bluetooth®<br></p>
+          <span class="beats_price">$199.95</span>
+          <input type="button" name="pods-Buy_now" value="Buy Now">
+        </div>
+        <div class="beats-img">
+          <img src="/img/head.png" alt="beatsHeadphone">
+        </div>
+  </section>
+  </div>
+  <div class="beats-img"></div>
+  </div>
+  </div>
+  </section>
+  <!-- CARDSGRID -->
+  <section class="item_pods">
+    <div class="container">
+      <div class="pods-wrapper">
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardOne.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </section>
+        </div>
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardTwo.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </section>
+        </div>
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardThree.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </section>
+        </div>
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardFour.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </section>
+        </div>
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardFive.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </section>
+        </div>
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardSix.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </section>
+        </div>
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardTwo.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+        </div>
+        <div class="item_box">
+          <section class="image_title">
+            <img src="/img/imagesCards/BitmapCardSix.png" alt="CardOne">
+          </section>
+          <section class="item-pods_text">
+            <p class="text_title">
+              <b>Beatsˣ</b>
+            </p>
+            <span class="text_description">
+              Up to 8 hours of battery life<br>
+              With Fast Fuel, a 5-minute charge = 2 hours of playback
+            </span>
+            <section class="price_button">
+              <span class="pods_price">
+                $299.95
+              </span>
+              <input type="button" name="pods-Buy_now" value="Buy Now">
+            </section>
+          </section>
+        </div>
+      </div>
+  </section>
+  <!-- ENDCARD -->
+  <section class="last__item">
+    <div class="container">
+      <div class="item-wrapper">
+        <div class="item-content">
+          <p><span>Hear it first</span></p>
+          <p>Get updates on product drops, collaborations and all things Beats.</p>
+          <p><input type="search" value="   Enter your email" name="mail" class="mail"></p>
+          <p><input type="submit" value="Sign up" name="submit" class="submit"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  @@include("../blocks/modules/header/header.html")
+  @@include("../blocks/modules/footer/footer.html")
+  <script src="js/main.js"></script>
+  <script src="js/vendor.js"></script>
+</body>
+
 </html>

@@ -5,3 +5,363 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+section {
+  width: 100%;
+}
+.navbar{
+  background-color:rgba(25, 23, 32, 0.47);
+  margin: 0 auto;
+  width: 100%;
+  position: fixed;
+  .navbar-logo{
+    margin-left: 97px;
+  }
+}
+.navbar-menu {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  grid-template-rows: 97px 0;
+  text-transform: uppercase;
+  align-items: center;
+   a {
+     text-decoration: none;
+     color: white;
+   }
+  }
+.navbar_sub-logo{
+  img {
+    padding: 10px 18px;
+  }
+}
+.header {
+  background: #2B2835;
+  height: 616px;
+  width: 100%;
+  .container {
+    margin: 0 auto;
+    width: 1248px;
+  }
+  .headphone-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,678px);
+    align-items: center;
+  }
+  .headphone-text {
+    color: white;
+    display: inline;
+    
+    .headphone-button {
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+    }
+    .headphone-price {
+      float:right;
+      font-style: regular;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 49px;
+    }
+    .button {
+      border-color: #00B0FF;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      background: #00B0FF;
+      border-radius: 100px;  
+      height: 41px;
+      width:170px;
+    }
+  }
+
+  .hedphone-description{
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 43px;
+  }
+
+}
+
+.wirelles__speaker{
+  top:200px;
+  position: relative;
+  height: 844px;
+  .wirelles-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .wirelles-title {
+    font-size: 50px;
+    line-height: 55px;
+    margin: 20px;
+  }
+  .wirelles-subtitle {
+    font-size: 40px;
+    line-height: 55px;
+  }
+  .wirelles-wrapper {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,537px);
+    p{
+      margin: 0;
+    } 
+    .wirelless-description {
+      margin-top:215px;
+      .wirelles-info {
+        font-size: 13px;
+        line-height: 20px;
+        color: #000000;
+        opacity: 0.52;
+        margin-top: 10px;
+    }
+    }
+    .wirelles-color {
+      font-size: 16px;
+      line-height: 20px;
+      margin-top: 10px;
+    }
+    .color-wrapper {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: repeat(3, 50px);
+      .item-color {
+        border-radius: 100px;
+        background: #FFFFFF;
+        border: 1px solid white;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+        height: 37px;
+        width: 37px;
+      }
+      .item-color2 {
+        position: relative;
+        height: 37px;
+        width: 37px;
+        border-radius: 100px;
+        background-color: red;
+        border: 1px solid red;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+      }
+      .item-color3 {
+        border-radius: 100px;
+        height: 37px;
+        width: 37px;
+        background: #000000;
+        border: 1px solid black;
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.135817);
+      }
+    }
+    .wirelles-block {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(2,200px);
+      input {
+        text-transform: uppercase;
+        background: #000000;
+        border-radius: 100px;
+        color: white;
+        margin: 5px;
+        height:41px;
+        width:117px;
+      }
+      .wirelles_price {
+        font-size: 40px;
+        line-height: 49px;
+      }
+
+    }
+  }
+}
+.powerbeats {
+background-size:initial;
+width: 100%;
+background: url("/img/background.png")no-repeat;
+  .powerbeats-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .powerbeats-text {
+    margin-top:200px;
+
+  }
+}
+.beats {
+  background: #F4F4F4;
+  .beats-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .beats-text {
+    margin-top:200px;
+  }
+}
+// CARDS
+.item_pods {
+  margin: 0 auto;
+  .container {
+    max-width: 1248px;
+  }
+.pods-wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-column-gap: 22px;
+  grid-row-gap: 1em;
+  } 
+  .image_title {
+    display: flex;
+    position: relative;
+    justify-content: center;
+  }
+  .item-pods_text{
+    margin-top: 30px;
+    display: block;
+    position: relative;
+  }
+  .text_title {
+    line-height: 55px;
+    color: #2B2835;
+    margin-left: 20px;
+    font-weight: 500;
+    font-size: 36px;
+  }
+  .text_description{
+    display: block;
+    padding-left: 20px;
+    line-height: 21px;
+    color: #030303;
+    }
+  .pods_price{ 
+    color: #9D8220;
+    font-size: 25px;
+    line-height: 30px;
+    padding: 5px 5px;
+    }  
+  .price_button {
+  padding: 5px 5px;
+  position: relative;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  }
+  .price_button input{
+    text-transform: uppercase;
+    position: relative;
+    display: block;
+    background: #000000;
+    height: 41px;
+    width: 145px;
+    border: solid 1px black;
+    border-radius: 100px;
+    color: white;
+    line-height: 17px;
+  }
+  .price_button input:hover{
+    background: blue;
+    border: solid 1px blue;
+  }
+  .item_box {
+    width: 296px;
+    position: relative;
+    background: #F4F4F4;
+  }
+  .item_box img {
+    height: 17em;
+    padding: 10px 0;
+  }
+}
+// cardend
+
+// LAST ITEM CSS
+.last__item {
+  margin-top: 106px;
+  .container {
+    display: block;
+    position: relative;
+    .item-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 17px;
+      color: #030303;
+      
+      background: #F8F8F9;
+      
+      .item-content {
+        span {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 50px;
+          line-height: 55px;
+          color: #2B2835;
+          padding-top: 50px;
+        }
+        li {
+          padding: 10px;
+        }
+        .mail{
+          position: relative;
+          height: 36px;
+          width: 507px;
+          border: 1px solid #BFBFBF;
+          box-sizing: border-box;
+          border-radius: 18px;
+          justify-content: center;
+          opacity: 0.31;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          /* identical to box height */
+          color: #030303;
+          mix-blend-mode: normal;
+          opacity: 0.31;
+        }
+        .submit{
+          position: relative;
+          color: white;
+          height: 41px;
+          width: 507px;
+          background: #00B0FF;
+          border: solid 1px #00B0FF;
+          border-radius: 100px;
+          text-transform: uppercase;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 17px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

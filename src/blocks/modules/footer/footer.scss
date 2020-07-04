@@ -1,0 +1,72 @@
+
+.footer {
+    margin-top: 63px;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+    padding-top: 10px;
+    background: #2b2835;
+    a {
+        text-decoration: none;
+    }
+    .footer-logo {
+        margin-left: 135px;
+    }
+    .footer-copyright {
+        display: grid;
+        align-items: center;
+        grid-column: 3;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        background-color: #2b2835;
+        span {
+            width: 346px;
+            margin: 20px 0;
+            padding: 0 20px;
+            line-height: 15px;
+            color: #ffffff;
+            mix-blend-mode: normal;
+            opacity: 0.31;
+        }
+    }
+}
+.products__title span {
+    text-decoration: none;
+    line-height: 31px;
+    color: #ffffff;
+}
+.products__description a {
+    margin-top: 20px 0;
+    opacity: 0.47;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.support__title span {
+    line-height: 31px;
+    color: #ffffff;
+}
+.support__description a {
+    opacity: 0.47;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.company-title span {
+    line-height: 31px;
+    color: #ffffff;
+}
+.company-description a {
+    opacity: 0.47;
+    text-transform: uppercase;
+    line-height: 31px;
+    color: #ffffff;
+}
+.footer-icons {
+    line-height: 31px;
+    color: #ffffff;
+}
+  
+  
